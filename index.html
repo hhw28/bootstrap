@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+<!-- 为了让 Bootstrap 开发的网站对移动设备友好，确保适当的绘制和触屏缩放，需要viewport meta标签 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>bootstrap</title>
+        <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <style>
+            body{
+                text-align: center;
+                margin: 0;
+                padding: 0;
+            }
+            .carousel-inner img{
+                width: 100%;
+            }
+            .box{
+                height: 300px;
+                padding: 15px;
+                margin-bottom: 60px;
+            }
+            .box img{
+                width: 120px;
+                border-radius: 50%;
+                margin-bottom: 20px;
+            }
+            .box>p{
+                margin-bottom: 100px;
+            }
+            .container{
+                margin-top: 100px;
+            }
+            @media(min-width:992px){
+                .container{
+                    width:940px;
+                }
+            }
+            @media(min-width:1200px){
+                .container{
+                    width:1170px;
+                }
+            }
+            @media(min-width:1700px){
+                .container{
+                    width:1470px;
+                }
+            }
+            #myCarousel li{
+                width: 7%;
+            }
+            .carousel-caption{
+                font-size:18px;
+                margin-bottom: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">啦啦啦</a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- 字体图标需要嵌套在<span>标签 -->
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> 登录</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-download-alt"></span> 下载</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="myCarousel" class="carousel slide">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="images/nkll.jpg" alt="1">
+                    <div class="carousel-caption">娜可露露</div>
+                </div>
+                <div class="item">
+                    <img src="images/ln.jpg" alt="1">
+                    <div class="carousel-caption">露娜</div>
+                </div>
+                <div class="item">
+                    <img src="images/wzj.jpg" alt="1">
+                    <div class="carousel-caption">王昭君</div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="box col-lg-2 col-md-3 col-sm-3 col-xs-12 col-lg-offset-2"><!-- "col-lg-offset-2" lg相加只有8个，还剩4格，所以偏移2格，实现居中 -->
+                    <header>
+                        <img src="images/logo-swk.jpg" alt="">
+                        <p>至尊宝</p>
+                    </header>
+                    <p>这是一个盒子，占了body宽度1/4这是一个盒子，占了body宽度1/4这是一个盒子，占了body宽度1/4这是一个盒子，占了body宽度1/4这是一个盒子，占了body宽度1/4这是一个盒子，占了body宽度1/4这是一个盒子，占了body宽度1/4这是一个盒子，占了body宽度1/4</p>
+                </div>
+                <div class="box col-lg-2 col-md-3 col-sm-3 col-xs-12">
+                    <header>
+                        <img src="images/logo-swk.jpg" alt="">
+                        <p>至尊宝</p>
+                    </header>
+                    <p>这是一个盒子，占了body宽度1/4这是一个盒子，占了body宽度1/4这是一个盒子，占了body宽度1/4这是一个盒子，占了body宽度1/4这是一个盒子，占了body宽度1/4这是一个盒子，占了body宽度1/4这是一个盒子，占了body宽度1/4这是一个盒子，占了body宽度1/4</p>
+                </div>
+                <div class="box col-lg-2 col-md-3 col-sm-3 col-xs-12">
+                    <header>
+                        <img src="images/logo-swk.jpg" alt="">
+                        <p>至尊宝</p>
+                    </header>
+                    <p>这是一个盒子，占了body宽度1/4这是一个盒子，占了body宽度1/4这是一个盒子，占了body宽度1/4这是一个盒子，占了body宽度1/4这是一个盒子，占了body宽度1/4这是一个盒子，占了body宽度1/4这是一个盒子，占了body宽度1/4这是一个盒子，占了body宽度1/4</p>
+                </div>
+                <div class="box col-lg-2 col-md-3 col-sm-3 col-xs-12">
+                    <header>
+                        <img src="images/logo-swk.jpg" alt="">
+                        <p>至尊宝</p>
+                    </header>
+                    <p>这是一个盒子，占了body宽度1/4这是一个盒子，占了body宽度1/4这是一个盒子，占了body宽度1/4这是一个盒子，占了body宽度1/4这是一个盒子，占了body宽度1/4这是一个盒子，占了body宽度1/4这是一个盒子，占了body宽度1/4这是一个盒子，占了body宽度1/4</p>
+                </div>
+            </div>
+        </div>
+        <script>
+            $(function(){
+                $('.carousel').carousel({
+                    interval:2000,   //2秒执行一次轮播
+                    wrap:true   //连续循环
+                })
+            })
+        </script>
+    </body>
+</html>
